@@ -24,16 +24,11 @@ const Index = () => {
         <ScrollView style={{ marginTop: 8 }}>
           {pokemons.map(item => (
             <View style={style_01.tarjeta} key={item.name}>
-              <Text style = {{position :'absolute'}}>{item.name}</Text>
+              <Text style = {style_01.name}>{item.name}</Text>
               <Image
                 source={{ uri: `https://img.pokemondb.net/sprites/omega-ruby-alpha-sapphire/dex/normal/${item.name}.png` }}
                 // eslint-disable-next-line react-native/no-inline-styles
-                style={{
-                  width: 150,
-                  height: 100,
-                  alignSelf: 'left',
-                  marginTop: 1,
-                }}
+              style = {style_01.Iconos}
               />
             </View>
           ))}

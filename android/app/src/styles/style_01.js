@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import {Dimensions, StyleSheet} from 'react-native';
+import { Dimensions, StyleSheet } from 'react-native';
 
 const alto = Dimensions.get('window').height - 150;
 
@@ -70,4 +70,15 @@ export const style_01 = StyleSheet.create({
     margin: 5,
     padding: 10,
   },
+  Iconos: {
+    width: 130,
+    height: 80,
+    alignSelf: 'left',
+    marginTop: 1,
+  },
+  name:{
+    textAlign: "center",
+    top: 50,
+    fontSize: 20
+  }
 });
