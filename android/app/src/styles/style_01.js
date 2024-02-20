@@ -1,60 +1,73 @@
 /* eslint-disable prettier/prettier */
-import { StyleSheet } from 'react-native';
+import {Dimensions, StyleSheet} from 'react-native';
 
+const alto = Dimensions.get('window').height - 150;
+
+// crea paleta de colores
+const principal = '#1B2E66';
+const naranja = '#FF9900';
+const blanco = '#FFFFFF';
+const gris_1 = '#B2BDD5';
+
+// crea la hoja de estilos
 export const style_01 = StyleSheet.create({
-    btn_Home: {
-        alignItems: 'center',
-        backgroundColor: '#00D100',
-        borderColor: '#000000',
-        borderWidth: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        width: '33%',
-    },
-
-    btn_Details: {
-        alignItems: 'center',
-        backgroundColor: '#FF7634',
-        borderColor: '#000000',
-        borderWidth: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        width: '33%',
-    },
-
-    btn_About: {
-        alignItems: 'center',
-        backgroundColor: '#FF0000',
-        borderColor: '#000000',
-        borderWidth: 1,
-        fontWeight: 'bold',
-        padding: 10,
-        width: '33%',
-    },
-
-    btn_Label: {
-        color: '#000000',
-        fontWeight: 'bold',
-        fontSize: 18,
-    },
-
-    row: {
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-    },
-
-    cont: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-
-    h1: {
-        fontSize: 32,
-        fontWeight: 'bold',
-        color: '#000000',
-    },
-
+  body: {
+    flex: 1,
+    flexDirection: 'column',
+  },
+  divHeader: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    margin: 30,
+  },
+  divMain: {
+    backgroundColor: gris_1,
+    height: alto,
+    padding: 8,
+  },
+  divFooter: {
+    paddingTop: 5,
+    backgroundColor: principal,
+    alignItems: 'center',
+    height: 50,
+  },
+  textFooter: {
+    color: naranja,
+    fontSize: 11,
+    fontWeight: '300',
+  },
+  h1: {
+    color: principal,
+    marginTop: 5,
+    marginBottom: 5,
+    fontSize: 24,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+  h2: {
+    color: principal,
+    marginTop: 5,
+    marginBottom: 5,
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
+  h3: {
+    color: principal,
+    marginTop: 5,
+    marginBottom: 5,
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  p1: {
+    color: principal,
+    textAlign: 'justify',
+    lineHeight: 14,
+    fontSize: 12,
+  },
+  tarjeta: {
+    backgroundColor: blanco,
+    borderRadius: 10,
+    margin: 5,
+    padding: 10,
+  },
 });
